@@ -16,10 +16,10 @@
 
 ## Modify the necessary information
 
-![image](https://user-images.githubusercontent.com/77989499/224948420-db673881-f68c-4b59-b1d2-d16eb9662cea.png)
-
 ### Smtp information
 使用qq邮箱，授权码请自己去qq邮箱获取，位于141行
+
+![image](https://user-images.githubusercontent.com/77989499/224948420-db673881-f68c-4b59-b1d2-d16eb9662cea.png)
 
 如果想使用别的邮箱，请修改smtp服务器，位于154行
 
