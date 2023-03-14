@@ -1,0 +1,123 @@
+1669466869618	geckodriver	INFO	Listening on 127.0.0.1:44459
+1669466870123	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56103" "-no-remote" "-profile" "/tmp/rust_mozprofileTcIEnE"
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: GLX extension missing
+[GFX1-]: glxtest: libEGL missing
+1669466872176	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileTcIEnE/search.json.mozlz4", (void 0)))
+[Parent 496843, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+Exiting due to channel error.
+Exiting due to channel error.
+1669467132040	geckodriver	INFO	Listening on 127.0.0.1:43989
+1669467132548	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "57683" "-no-remote" "-profile" "/tmp/rust_mozprofileIWJerd"
+Error: no DISPLAY environment variable specified
+1669467292126	geckodriver	INFO	Listening on 127.0.0.1:44055
+1669467292631	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39477" "-no-remote" "-profile" "/tmp/rust_mozprofileQ4XT8J"
+Error: no DISPLAY environment variable specified
+1669467379631	geckodriver	INFO	Listening on 127.0.0.1:57763
+1669467379637	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "43759" "-no-remote" "-profile" "/tmp/rust_mozprofileYmjPuS"
+Error: no DISPLAY environment variable specified
+1669467432905	geckodriver	INFO	Listening on 127.0.0.1:36135
+1669467432911	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "50363" "-no-remote" "-profile" "/tmp/rust_mozprofile5JY4jA"
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: GLX extension missing
+[GFX1-]: glxtest: libEGL missing
+1669467433833	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile5JY4jA/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50363/devtools/browser/2946b0aa-fc55-4e45-b1dc-02e25eafd942
+Exiting due to channel error.
+Exiting due to channel error.
+1669467534748	geckodriver	INFO	Listening on 127.0.0.1:45905
+1669467535253	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41781" "-no-remote" "-profile" "/tmp/rust_mozprofilekNHAP6"
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: GLX extension missing
+[GFX1-]: glxtest: libEGL missing
+1669467537066	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilekNHAP6/search.json.mozlz4", (void 0)))
+Exiting due to channel error.
+Exiting due to channel error.
+1669467594863	geckodriver	INFO	Listening on 127.0.0.1:46067
+1669467595368	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "52251" "-no-remote" "-profile" "/tmp/rust_mozprofileAvy4LS"
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: GLX extension missing
+[GFX1-]: glxtest: libEGL missing
+1669467597153	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileAvy4LS/search.json.mozlz4", (void 0)))
+Exiting due to channel error.
+Exiting due to channel error.
+1669467741601	geckodriver	INFO	Listening on 127.0.0.1:39399
+1669467741611	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "46081" "-no-remote" "-profile" "/tmp/rust_mozprofile8DYiJh"
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: GLX extension missing
+[GFX1-]: glxtest: libEGL missing
+1669467743515	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile8DYiJh/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1669467837363	geckodriver	INFO	Listening on 127.0.0.1:38579
+1669467837866	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39545" "-no-remote" "-profile" "/tmp/rust_mozprofileoNYE5K"
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: GLX extension missing
+[GFX1-]: glxtest: libEGL missing
+1669467839852	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileoNYE5K/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:39545/devtools/browser/1f3ab38a-9207-44cc-b96c-71adcfbb1685
+1669467843674	Marionette	INFO	Listening on port 34731
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1669468138725	geckodriver	INFO	Listening on 127.0.0.1:45761
+1669468139231	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "45867" "-no-remote" "-profile" "/tmp/rust_mozprofilellQlEH"
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: GLX extension missing
+[GFX1-]: glxtest: libEGL missing
+1669468141140	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilellQlEH/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+Exiting due to channel error.
+Exiting due to channel error.
+1669468924377	geckodriver	INFO	Listening on 127.0.0.1:48687
+1669468924882	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54831" "-no-remote" "-profile" "/tmp/rust_mozprofile6u7Q7y"
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: GLX extension missing
+[GFX1-]: glxtest: libEGL missing
+1669468926793	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile6u7Q7y/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54831/devtools/browser/b70d95bb-e9b2-4b49-9811-f7cec2b9fefb
+1669468929445	Marionette	INFO	Listening on port 36367
+1669468929918	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://lib.baomitu.com/jquery/1.9.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1669468932974	Marionette	INFO	Stopped listening on port 36367
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1669619610157	geckodriver	INFO	Listening on 127.0.0.1:39407
+1669619610660	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "42563" "-no-remote" "-profile" "/tmp/rust_mozprofileNUYFI7"
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: GLX extension missing
+[GFX1-]: glxtest: libEGL missing
+1669619612571	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileNUYFI7/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:42563/devtools/browser/fd43b421-7bba-449f-a9bd-22f122279c67
+1669619615001	Marionette	INFO	Listening on port 41501
+1669619615098	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://lib.baomitu.com/jquery/1.9.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1669619617253	Marionette	INFO	Stopped listening on port 41501
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1678092907141	geckodriver	INFO	Listening on 127.0.0.1:60395
+1678092907644	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "50917" "-no-remote" "-profile" "/tmp/rust_mozprofileg2EhsH"
+Unable to init server: Could not connect: Connection refused
+Error: cannot open display: :0
