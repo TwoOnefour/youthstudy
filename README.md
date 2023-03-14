@@ -37,7 +37,7 @@
 
 # (NOTE)IT MAY NOT WORK
 
-由于没有鉴别手段，无法验证接口正确性，建议只当作一个自动截图使用，不保证后台是否有观看数据。
+由于没有鉴别手段，无法验证接口正确性，建议只当作一个自动截图使用，不保证后台有观看数据。
 ![558E4669DE897CF0A70183480A5FFC8A](https://user-images.githubusercontent.com/77989499/224951932-412fd8f3-b170-48e7-a46e-51b86cd4b449.png)
 
 ![UEPQ5E3`7ASFN X`P1A3F6F](https://user-images.githubusercontent.com/77989499/224951217-7bbb7458-9fd3-48d9-92d6-a478c2b6332e.png)
