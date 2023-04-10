@@ -23,6 +23,9 @@ urllib3.disable_warnings()
 class FkYouthStudy:
     def run(self):
         self.openid = ""  # 只需填入自己的openid
+        if self.openid == "":
+            print("请填入openid")
+            return
         self.get_jpg(self.get_str())
         self.submit_data(self.get_data())
         self.mail()
