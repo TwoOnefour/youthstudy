@@ -26,8 +26,10 @@
 如果想使用别的邮箱，请修改smtp服务器，位于154行
 
 ![image](https://user-images.githubusercontent.com/77989499/224948956-11a88f02-233c-436e-9345-9eca59499a4f.png)
+
 ### Submit information
 
+![图片](https://user-images.githubusercontent.com/77989499/230895043-0d134079-cfef-409f-927c-d82ca9491d1f.png)
 
 建议自行抓包填写,只用填写openid即可，位于youthSpider.py的12行
 
