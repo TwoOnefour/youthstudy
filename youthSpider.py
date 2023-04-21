@@ -4,6 +4,7 @@ import json
 import os
 import random
 import smtplib
+import sys
 import time
 import urllib.parse
 from email import encoders
@@ -16,11 +17,12 @@ import numpy as np
 import requests
 import urllib3
 from lxml import etree
-
+# import sys
 urllib3.disable_warnings()
 
-
+# print(sys.argv[0].strip("youthSpider.py"))
 class FkYouthStudy:
+    path = sys.argv[0].replace("/youthSpider.py", "")
     def run(self):
         self.openid = ""  # 只需填入自己的openid
         if self.openid == "":
@@ -73,24 +75,24 @@ class FkYouthStudy:
         requests.get('https://cp.fjg360.cn/index.php', params=data, verify=False,headers=headers)
 
     def get_jpg(self, h):  # 切割图片
-        if os.path.exists("./tmp"):
-            for i in os.listdir(os.getcwd() + "/tmp"):
-                os.remove(os.getcwd() + "/tmp/" + i)
+        if os.path.exists(self.path + "/tmp"):
+            for i in os.listdir(self.path + "/tmp"):
+                os.remove(self.path + "/tmp/" + i)
         else:
-            os.mkdir("./tmp")
+            os.mkdir(self.path + "/tmp")
         response = requests.get('https://h5.cyol.com/special/daxuexi/' + h + '/images/end.jpg', verify=False).content
 
-        f = open("{}.jpg".format("./tmp/tmp1"), mode="wb")
+        f = open("{}.jpg".format(self.path + "/tmp/tmp1"), mode="wb")
         f.write(response)
         f.close()
-        image = cv2.imread("tmp/tmp1.jpg")
-        imagetemp1 = cv2.imread("1.jpg")
+        image = cv2.imread(self.path + "/tmp/tmp1.jpg")
+        imagetemp1 = cv2.imread(self.path + "/1.jpg")
         image1 = cv2.resize(image,(1170, 2008),interpolation=cv2.INTER_AREA)
-        imagetemp = cv2.imread("temp.jpg")
+        imagetemp = cv2.imread(self.path + "/temp.jpg")
         image2 = cv2.resize(imagetemp,(1170,275),interpolation=cv2.INTER_AREA)
         imagetemp1 = cv2.resize(imagetemp1,(1170,249),interpolation=cv2.INTER_AREA)
         image3 = np.vstack([image2,image1,imagetemp1])
-        cv2.imencode('.jpg', image3)[1].tofile(r'./tmp/{}.jpg'.format(self.title))
+        cv2.imencode('.jpg', image3)[1].tofile(self.path + r'/tmp/{}.jpg'.format(self.title))
 
     def get_str(self):
         headers = {
@@ -121,7 +123,7 @@ class FkYouthStudy:
             message = MIMEMultipart()
             m_img = MIMEBase('', '')
             m_img.add_header('Content-Disposition', 'attachment', filename="{}".format(self.title))
-            fd = open("{}.jpg".format("./tmp/"+self.title), "rb")  # 读取本地图片
+            fd = open("{}.jpg".format(self.path + "/tmp/"+self.title), "rb")  # 读取本地图片
             m_img.set_payload(fd.read())
             encoders.encode_base64(m_img)
             message.attach(m_img)
