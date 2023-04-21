@@ -127,7 +127,7 @@ class FkYouthStudy:
             m_img.set_payload(fd.read())
             encoders.encode_base64(m_img)
             message.attach(m_img)
-            message['From'] = Header(my_sender)
+            message['From'] = Header(my_sender)  # 一定要是自己的邮件
             message['Subject'] = Header('{}'.format(self.title+ "  "))
 
             server = smtplib.SMTP_SSL("smtp.qq.com", 465)  # 发件人邮箱中的SMTP服务器，端口是465
