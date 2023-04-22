@@ -18,13 +18,14 @@ import requests
 import urllib3
 from lxml import etree
 
-# import sys
-urllib3.disable_warnings()
 
-# print(sys.argv[0].strip("youthSpider.py"))
 class FkYouthStudy:
-    path = sys.argv[0].replace("/youthSpider.py", "")
+    def __init__(self):
+        self.openid = None
+        self.path = sys.argv[0].replace("/youthSpider.py", "")
+
     def run(self):
+        urllib3.disable_warnings()
         self.openid = ""  # 只需填入自己的openid
         if self.openid == "":
             print("请填入openid")
@@ -130,7 +131,6 @@ class FkYouthStudy:
             message.attach(m_img)
             message['From'] = Header(my_sender)  # 一定要是自己的邮件
             message['Subject'] = Header('{}'.format(self.title+ "  "))
-
             server = smtplib.SMTP_SSL("smtp.qq.com", 465)  # 发件人邮箱中的SMTP服务器，端口是465
             server.login(my_sender, my_pass)  # 括号中对应的是发件人邮箱账号、邮箱密码
             server.sendmail(my_sender, my_user, message.as_string())  # 括号中对应的是发件人邮箱账号、收件人邮箱账号、发送邮件
