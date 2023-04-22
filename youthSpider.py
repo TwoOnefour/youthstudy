@@ -17,6 +17,7 @@ import numpy as np
 import requests
 import urllib3
 from lxml import etree
+
 # import sys
 urllib3.disable_warnings()
 
@@ -122,7 +123,7 @@ class FkYouthStudy:
             my_user = ''  # 收件人邮箱账号，我这边发送给自己
             message = MIMEMultipart()
             m_img = MIMEBase('', '')
-            m_img.add_header('Content-Disposition', 'attachment', filename="{}".format(self.title))
+            m_img.add_header('Content-Disposition', 'attachment', filename="{}.jpg".format(self.title))
             fd = open("{}.jpg".format(self.path + "/tmp/"+self.title), "rb")  # 读取本地图片
             m_img.set_payload(fd.read())
             encoders.encode_base64(m_img)
