@@ -21,7 +21,7 @@ from lxml import etree
 class FkYouthStudy:
     def __init__(self):
         self.openid = "" # 只需填入自己的openid
-        self.path = os.path.realpath(".")
+        self.path = os.path.split(os.path.realpath(__file__))[0]
 
     def run(self):
         urllib3.disable_warnings()
