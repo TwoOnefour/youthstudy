@@ -4,7 +4,6 @@ import json
 import os
 import random
 import smtplib
-import sys
 import time
 import urllib.parse
 from email import encoders
@@ -21,12 +20,11 @@ from lxml import etree
 
 class FkYouthStudy:
     def __init__(self):
-        self.openid = None
-        self.path = sys.argv[0].replace("/youthSpider.py", "")
+        self.openid = "" # 只需填入自己的openid
+        self.path = os.path.realpath(".")
 
     def run(self):
         urllib3.disable_warnings()
-        self.openid = ""  # 只需填入自己的openid
         if self.openid == "":
             print("请填入openid")
             return
