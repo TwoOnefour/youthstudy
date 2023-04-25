@@ -20,13 +20,19 @@ from lxml import etree
 
 class FkYouthStudy:
     def __init__(self):
-        self.openid = "" # 只需填入自己的openid
+        self.openid = ""  # 只需填入自己的openid
+        self.my_sender = ""  # 填入邮箱账号
+        self.my_pass = ""  # 填入邮箱密码
+        self.my_user = ""  # 填入接受邮箱
         self.path = os.path.split(os.path.realpath(__file__))[0]
 
     def run(self):
         urllib3.disable_warnings()
         if self.openid == "":
             print("请填入openid")
+            return
+        elif self.my_sender == "":
+            print("请填入邮箱信息")
             return
         self.get_jpg(self.get_str())
         self.submit_data(self.get_data())
@@ -44,15 +50,18 @@ class FkYouthStudy:
 
     def submit_data(self, n):
         n = json.loads(n.text.split("(")[1].strip(")"))
-        data = { # 这里建议自己抓包，接口是https://cp.fjg360.cn/index.php
+        if n["h5_ask_member"] == "":
+            print("openid无效，跳过学习数据接口")
+            return
+        data = {  # 这里建议自己抓包，接口是https://cp.fjg360.cn/index.php
             'm': 'vote',
             'c': 'index',
             'a': 'save_door',
             'username': n["h5_ask_member"]["name"],
             "openid": self.openid, # 你的openid
             'city': n["h5_ask_member"]["danwei1"], # 大学名字
-            'danwei2': n["h5_ask_member"]["danwei2"], # xx班团支部
-            'danwei': n["h5_ask_member"]["danwei3"], # xx学院
+            'danwei2': n["h5_ask_member"]["danwei2"],  # xx班团支部
+            'danwei': n["h5_ask_member"]["danwei3"],  # xx学院
             'lesson_name': urllib.parse.quote(self.title),
             '_':int(time.time() * 1000),
             'sessionId':'',
@@ -117,9 +126,9 @@ class FkYouthStudy:
     def mail(self):
         ret = True
         try:
-            my_sender = ''  # 发件人邮箱账号
-            my_pass = ''  # 发件人邮箱密码
-            my_user = ''  # 收件人邮箱账号，我这边发送给自己
+            my_sender = self.my_sender  # 发件人邮箱账号
+            my_pass = self.my_pass  # 发件人邮箱密码
+            my_user = self.my_user  # 收件人邮箱账号，我这边发送给自己
             message = MIMEMultipart()
             m_img = MIMEBase('', '')
             m_img.add_header('Content-Disposition', 'attachment', filename="{}.jpg".format(self.title))
